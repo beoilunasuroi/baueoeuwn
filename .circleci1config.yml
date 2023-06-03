@@ -1,0 +1,90 @@
+jobs:
+  aws-2023.05:
+    docker:
+      - image: cimg/aws:2023.05
+    steps:
+      - checkout
+
+
+  aws-2023.04:
+    docker:
+      - image: cimg/aws:2023.04
+    steps:
+      - checkout
+
+
+  aws-2023.03:
+    docker:
+      - image: cimg/aws:2023.03
+    steps:
+      - checkout
+
+
+  aws-2023.01:
+    docker:
+      - image: cimg/aws:2023.01
+    steps:
+      - checkout
+
+
+  aws-2022.11:
+    docker:
+      - image: cimg/aws:2022.11
+    steps:
+      - checkout
+
+
+  aws-2022.10:
+    docker:
+      - image: cimg/aws:2022.10
+    steps:
+      - checkout
+
+
+  aws-2022.09:
+    docker:
+      - image: cimg/aws:2022.09
+    steps:
+      - checkout
+
+
+  aws-2022.06:
+    docker:
+      - image: cimg/aws:2022.06
+    steps:
+      - checkout
+
+
+
+
+workflows:
+  version: 2
+  all-aws1:
+    jobs:
+      - aws-2023.05
+      - aws-2023.04
+  all-aws2:
+    jobs:
+      - aws-2023.03
+  all-aws3:
+    jobs:
+      - aws-2023.01
+  all-aws4:
+    jobs:
+      - aws-2022.11
+  all-aws5:
+    jobs:
+      - aws-2022.10
+  all-aws6:
+    jobs:
+      - aws-2022.09
+  all-aws7:
+    jobs:
+      - aws-2022.06
+
+
+
+
+
+
+
